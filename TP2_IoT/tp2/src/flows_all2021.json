@@ -1,0 +1,2409 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "Flow by Levy",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "842592b4.a7cfc8",
+        "type": "tab",
+        "label": "Flow by Nersissian",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cde23648.61af4",
+        "type": "tab",
+        "label": "Flow by Toprak",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ea4cc328.20b16",
+        "type": "tab",
+        "label": "Flow by ElChalfoun",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "66fd874c.598cf",
+        "type": "tab",
+        "label": "Flow by HirthDaumas",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ca55284a.b8434",
+        "type": "tab",
+        "label": "Flow by Jerome",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "40b93780.97f398",
+        "type": "tab",
+        "label": "Flow by Chouchane",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "dce74ec1.f38df",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "d1eef36a.a0697",
+        "order": 1,
+        "disp": true,
+        "width": "32",
+        "collapse": false
+    },
+    {
+        "id": "d1eef36a.a0697",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d6526bdeb23363ac",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "2b7ac01b.fc984",
+        "type": "ui_group",
+        "name": "Moniteur",
+        "tab": "99ab8dc5.f435c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "99ab8dc5.f435c",
+        "type": "ui_tab",
+        "name": "HTTP",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "abe60194.37f1b8",
+        "type": "serial-port",
+        "serialport": "/dev/cu.usbserial-0001",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "}",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "63b5ef11.e5fd38",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "da08b7b4.ae1e78",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "63b5ef11.e5fd38",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "9d6f0a54.06bef",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#ff2600",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#ff2600",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#ff2600",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ff674d",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#ff2600",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7d58ae2.50551d",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2b7ac01b.fc984",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b2c51c4c.a05ac",
+        "type": "ui_group",
+        "name": "ESP 32",
+        "tab": "850f227c.7b74d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "850f227c.7b74d",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9607fdb4.8fa8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ae685530.a77b88",
+        "type": "ui_tab",
+        "name": "Capteur Esp32",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "18c2324.c1ce6ce",
+        "type": "ui_group",
+        "name": "Niveau de Luminosité (en Lumen)",
+        "tab": "ae685530.a77b88",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "fc64141.34fafe8",
+        "type": "ui_group",
+        "name": "Statut des LED",
+        "tab": "ae685530.a77b88",
+        "order": 3,
+        "disp": true,
+        "width": 7,
+        "collapse": false
+    },
+    {
+        "id": "94c7cedd.c8bb3",
+        "type": "ui_group",
+        "name": "Température (en degré celsius)",
+        "tab": "ae685530.a77b88",
+        "order": 2,
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "17834f2e.932329",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "747b9c4.4742364",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "747b9c4.4742364",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e78ac9d.0ba4438",
+        "type": "ui_group",
+        "name": "Light sensor ",
+        "tab": "450d3fdc.401eb",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3cea36ea.c5c43a",
+        "type": "ui_group",
+        "name": "Leds",
+        "tab": "450d3fdc.401eb",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1da73d7a.cd7823",
+        "type": "ui_group",
+        "name": "Heat sensor",
+        "tab": "450d3fdc.401eb",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "450d3fdc.401eb",
+        "type": "ui_tab",
+        "name": "Numerical tab",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f97df1ff.f9a67",
+        "type": "ui_group",
+        "name": "Google Services",
+        "tab": "33ce186e.f7ba68",
+        "order": 1,
+        "disp": true,
+        "width": "12"
+    },
+    {
+        "id": "797d7c7e.1321f4",
+        "type": "ui_group",
+        "name": "Ping Latency",
+        "tab": "33ce186e.f7ba68",
+        "order": 2,
+        "disp": true,
+        "width": "25"
+    },
+    {
+        "id": "33ce186e.f7ba68",
+        "type": "ui_tab",
+        "name": "G-Suite Latency",
+        "icon": "fa-google",
+        "order": 17
+    },
+    {
+        "id": "3cc11d24.ff01a2",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "WARNING: please check you have started this container with a volume that is mounted to /data\\n otherwise any flow changes are lost when you redeploy or upgrade the container\\n (e.g. upgrade to a more recent node-red docker image).\\n  If you are using named volumes you can ignore this warning.\\n Double click or see info side panel to learn how to start Node-RED in Docker to save your work",
+        "info": "\nTo start docker with a bind mount volume (-v option), for example:\n\n```\ndocker run -it -p 1880:1880 -v /home/user/node_red_data:/data --name mynodered nodered/node-red\n```\n\nwhere `/home/user/node_red_data` is a directory on your host machine where you want to store your flows.\n\nIf you do not do this then you can experiment and redploy flows, but if you restart or upgrade the container the flows will be disconnected and lost. \n\nThey will still exist in a hidden data volume, which can be recovered using standard docker techniques, but that is much more complex than just starting with a named volume as described above.",
+        "x": 350,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "21cff38f.baad3c",
+        "type": "ui_chart",
+        "z": "f6f2187d.f17ca8",
+        "name": "A/C chart",
+        "group": "dce74ec1.f38df",
+        "order": 0,
+        "width": "16",
+        "height": "9",
+        "label": "A/C",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-0.5",
+        "ymax": "1.5",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#00ff00",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 680,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "75916e9b.3909a",
+        "type": "http in",
+        "z": "f6f2187d.f17ca8",
+        "name": "ESP32 POST request",
+        "url": "/",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 320,
+        "wires": [
+            [
+                "82a719aa.4b354",
+                "4da7a09c.405e",
+                "43bddc83.706a24",
+                "3d30267e.55979a",
+                "3bf836fe.72044a"
+            ]
+        ]
+    },
+    {
+        "id": "82a719aa.4b354",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4da7a09c.405e",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "temperature()",
+        "func": "msg.payload = msg.payload.temperature;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "4cc5e35.87bd69c"
+            ]
+        ]
+    },
+    {
+        "id": "43bddc83.706a24",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "light()",
+        "func": "msg.payload = msg.payload.light;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "6a9cc81e.5d8da"
+            ]
+        ]
+    },
+    {
+        "id": "3d30267e.55979a",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "cooler()",
+        "func": "msg.topic = \"cooler\";\nmsg.payload = msg.payload.cooler == \"on\" ? 1 : 0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 440,
+        "y": 260,
+        "wires": [
+            [
+                "21cff38f.baad3c"
+            ]
+        ]
+    },
+    {
+        "id": "3bf836fe.72044a",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "name": "heater()",
+        "func": "msg.topic = \"heater\";\nmsg.payload = msg.payload.heater == \"on\" ? 1 : 0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 440,
+        "y": 300,
+        "wires": [
+            [
+                "21cff38f.baad3c"
+            ]
+        ]
+    },
+    {
+        "id": "4cc5e35.87bd69c",
+        "type": "ui_chart",
+        "z": "f6f2187d.f17ca8",
+        "name": "temperature chart",
+        "group": "dce74ec1.f38df",
+        "order": 0,
+        "width": "16",
+        "height": "9",
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-5",
+        "ymax": "35",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#0067ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 710,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6a9cc81e.5d8da",
+        "type": "ui_chart",
+        "z": "f6f2187d.f17ca8",
+        "name": "light chart",
+        "group": "dce74ec1.f38df",
+        "order": 0,
+        "width": "16",
+        "height": "9",
+        "label": "Light",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "2000",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#0067ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 680,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab9b2bf6.1a44a8",
+        "type": "comment",
+        "z": "842592b4.a7cfc8",
+        "name": "WARNING: please check you have started this container with a volume that is mounted to /data\\n otherwise any flow changes are lost when you redeploy or upgrade the container\\n (e.g. upgrade to a more recent node-red docker image).\\n  If you are using named volumes you can ignore this warning.\\n Double click or see info side panel to learn how to start Node-RED in Docker to save your work",
+        "info": "\nTo start docker with a bind mount volume (-v option), for example:\n\n```\ndocker run -it -p 1880:1880 -v /home/user/node_red_data:/data --name mynodered nodered/node-red\n```\n\nwhere `/home/user/node_red_data` is a directory on your host machine where you want to store your flows.\n\nIf you do not do this then you can experiment and redploy flows, but if you restart or upgrade the container the flows will be disconnected and lost. \n\nThey will still exist in a hidden data volume, which can be recovered using standard docker techniques, but that is much more complex than just starting with a named volume as described above.",
+        "x": 350,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4cce9ec0.3658a",
+        "type": "http response",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 560,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "3c18cdc7.6a9832",
+        "type": "json",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 530,
+        "y": 900,
+        "wires": [
+            [
+                "ee1dff98.ee4ec8"
+            ]
+        ]
+    },
+    {
+        "id": "dd90578.8e4aaa8",
+        "type": "ui_text",
+        "z": "842592b4.a7cfc8",
+        "group": "2b7ac01b.fc984",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Adresse IP",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1010,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "af6998b6.95de4",
+        "type": "ui_gauge",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "-45",
+        "max": "45",
+        "colors": [
+            "#004d65",
+            "#831000",
+            "#008cb4"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1010,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "fc5d189f.4ec988",
+        "type": "ui_gauge",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Luminosity",
+        "label": "Lumen",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "3000",
+        "colors": [
+            "#008cb4",
+            "#831000",
+            "#9aa60d"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1010,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "ee1dff98.ee4ec8",
+        "type": "function",
+        "z": "842592b4.a7cfc8",
+        "name": "JSON",
+        "func": "var msg1 = { payload: msg.payload.ip };\nvar msg2 = { payload: msg.payload.value1 };\nvar msg3 = { payload: msg.payload.value2 };\nvar msg4 = { payload: msg.payload.value3 };\nvar msg5 = { payload: msg.payload.value4 };\nreturn [msg1, msg2, msg3, msg4, msg5];",
+        "outputs": 5,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 900,
+        "wires": [
+            [
+                "dd90578.8e4aaa8"
+            ],
+            [
+                "af6998b6.95de4"
+            ],
+            [
+                "af20b37c.1fefb8"
+            ],
+            [
+                "fc5d189f.4ec988"
+            ],
+            [
+                "ed4be187.4093b"
+            ]
+        ]
+    },
+    {
+        "id": "83964440.ef455",
+        "type": "http in",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "url": "moniteur",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 800,
+        "wires": [
+            [
+                "4cce9ec0.3658a",
+                "3c18cdc7.6a9832",
+                "7db23c5f.86e804"
+            ]
+        ]
+    },
+    {
+        "id": "7a738be9.405314",
+        "type": "http response",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 680,
+        "y": 411,
+        "wires": []
+    },
+    {
+        "id": "d5d4ab95.65ec2",
+        "type": "http in",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "url": "/light",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 591,
+        "wires": [
+            [
+                "c7e974fa.91344"
+            ]
+        ]
+    },
+    {
+        "id": "31e2771b.621f58",
+        "type": "http response",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 680,
+        "y": 551,
+        "wires": []
+    },
+    {
+        "id": "c7e974fa.91344",
+        "type": "function",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "func": "msg.payload = {\"value1\":24.25, \"value2\":49.54, \"value3\":1005.14};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 490,
+        "y": 591,
+        "wires": [
+            [
+                "31e2771b.621f58",
+                "7dc0bd11.a5d8a4"
+            ]
+        ]
+    },
+    {
+        "id": "7dc0bd11.a5d8a4",
+        "type": "debug",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 690,
+        "y": 619,
+        "wires": []
+    },
+    {
+        "id": "377d1db8.1f5c9a",
+        "type": "debug",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 690,
+        "y": 491,
+        "wires": []
+    },
+    {
+        "id": "e849bce8.acf13",
+        "type": "http in",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "url": "/temperature",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 451,
+        "wires": [
+            [
+                "d112882a.9f2c2"
+            ]
+        ]
+    },
+    {
+        "id": "d112882a.9f2c2",
+        "type": "function",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "func": "msg.payload = msg.payload.temperature;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 451,
+        "wires": [
+            [
+                "377d1db8.1f5c9a",
+                "7a738be9.405314"
+            ]
+        ]
+    },
+    {
+        "id": "af20b37c.1fefb8",
+        "type": "ui_text",
+        "z": "842592b4.a7cfc8",
+        "group": "2b7ac01b.fc984",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Port",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 990,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "ed4be187.4093b",
+        "type": "ui_text",
+        "z": "842592b4.a7cfc8",
+        "group": "2b7ac01b.fc984",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Time until it's lunched :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1050,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "7db23c5f.86e804",
+        "type": "debug",
+        "z": "842592b4.a7cfc8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "599740b7.efde9",
+        "type": "http response",
+        "z": "cde23648.61af4",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 380,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "1618a829.76f638",
+        "type": "json",
+        "z": "cde23648.61af4",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 370,
+        "y": 640,
+        "wires": [
+            [
+                "d0089cc7.d25ac"
+            ]
+        ]
+    },
+    {
+        "id": "c7410fa2.1c2fa",
+        "type": "debug",
+        "z": "cde23648.61af4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "75a22f74.f1aba",
+        "type": "ui_text",
+        "z": "cde23648.61af4",
+        "group": "2b7ac01b.fc984",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Dashboard",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 810,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "105ac2cc.7b3cfd",
+        "type": "ui_gauge",
+        "z": "cde23648.61af4",
+        "name": "",
+        "group": "2b7ac01b.fc984",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Lumiere",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2000",
+        "colors": [
+            "#b366ff",
+            "#8000ff",
+            "#440088"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 800,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "d0089cc7.d25ac",
+        "type": "function",
+        "z": "cde23648.61af4",
+        "name": "JSON or URL Encoded",
+        "func": "var msg0 = { payload: msg.payload.api_key };\nvar msg1 = { payload: msg.payload.led };\nvar msg2 = { payload: msg.payload.lumiere };\n\nreturn [msg0, msg1, msg2];",
+        "outputs": 5,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 640,
+        "wires": [
+            [
+                "c7410fa2.1c2fa"
+            ],
+            [
+                "75a22f74.f1aba"
+            ],
+            [
+                "105ac2cc.7b3cfd"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5d9ab0d2.66b92",
+        "type": "http in",
+        "z": "cde23648.61af4",
+        "name": "POST REQUEST",
+        "url": "update-sensor",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 571,
+        "wires": [
+            [
+                "599740b7.efde9",
+                "c7410fa2.1c2fa",
+                "1618a829.76f638"
+            ]
+        ]
+    },
+    {
+        "id": "271d28a9.fab3d8",
+        "type": "debug",
+        "z": "ea4cc328.20b16",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f4187f25.89ef2",
+        "type": "json",
+        "z": "ea4cc328.20b16",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 290,
+        "y": 380,
+        "wires": [
+            [
+                "7a272746.b9a738",
+                "3b8f3948.06f7b6",
+                "39368b01.5b1da4",
+                "1b1bdf90.b6e87",
+                "1c382952.3e0527"
+            ]
+        ]
+    },
+    {
+        "id": "7a272746.b9a738",
+        "type": "function",
+        "z": "ea4cc328.20b16",
+        "name": "Formatting for csv",
+        "func": "return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 510,
+        "y": 280,
+        "wires": [
+            [
+                "58d8caa2.1fa564"
+            ]
+        ]
+    },
+    {
+        "id": "3b8f3948.06f7b6",
+        "type": "function",
+        "z": "ea4cc328.20b16",
+        "name": "extract_temperature()",
+        "func": "msg.topic = \"temperature\";\nmsg.payload = msg.payload.temperature;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 320,
+        "wires": [
+            [
+                "96dc35a2.7ff348"
+            ]
+        ]
+    },
+    {
+        "id": "39368b01.5b1da4",
+        "type": "function",
+        "z": "ea4cc328.20b16",
+        "name": "extract_light",
+        "func": "msg.topic = \"light\";\nmsg.payload = msg.payload.light;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 490,
+        "y": 360,
+        "wires": [
+            [
+                "9ddb2a73.5b6128",
+                "42ad362c.65b2c8"
+            ]
+        ]
+    },
+    {
+        "id": "42ad362c.65b2c8",
+        "type": "ui_chart",
+        "z": "ea4cc328.20b16",
+        "name": "",
+        "group": "b2c51c4c.a05ac",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "label": "Evolution de la Luminosité ",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 810,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58d8caa2.1fa564",
+        "type": "file",
+        "z": "ea4cc328.20b16",
+        "name": "",
+        "filename": "C:\\Users\\ralph\\Onedrive\\Bureau\\Node-Red\\node-red.csv",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 910,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e290ea96.77a6d8",
+        "type": "http in",
+        "z": "ea4cc328.20b16",
+        "name": "",
+        "url": "/",
+        "method": "post",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "271d28a9.fab3d8",
+                "f4187f25.89ef2"
+            ]
+        ]
+    },
+    {
+        "id": "96dc35a2.7ff348",
+        "type": "ui_gauge",
+        "z": "ea4cc328.20b16",
+        "name": "Température",
+        "group": "b2c51c4c.a05ac",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "donut",
+        "title": "Température",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-20",
+        "max": "40",
+        "colors": [
+            "#000cb3",
+            "#00e626",
+            "#ca3838"
+        ],
+        "seg1": "16",
+        "seg2": "22",
+        "x": 770,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9ddb2a73.5b6128",
+        "type": "ui_gauge",
+        "z": "ea4cc328.20b16",
+        "name": "Luminosité",
+        "group": "b2c51c4c.a05ac",
+        "order": 3,
+        "width": "3",
+        "height": "3",
+        "gtype": "donut",
+        "title": "Luminosité",
+        "label": "lum",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4095",
+        "colors": [
+            "#fd983a",
+            "#ffbb00",
+            "#ffdd00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 770,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3d67e77d.a36cb8",
+        "type": "ui_text",
+        "z": "ea4cc328.20b16",
+        "group": "b2c51c4c.a05ac",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Statut LED de Lumière :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 810,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "1b1bdf90.b6e87",
+        "type": "function",
+        "z": "ea4cc328.20b16",
+        "name": "print_ledLight_state",
+        "func": "msg.topic = \"La LED de Luminosité :\";\n\nif (msg.payload.ledLight == \"off\")\n    msg.payload = \" éteinte\";\nelse\n    msg.payload = \" allumée\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 510,
+        "y": 400,
+        "wires": [
+            [
+                "3d67e77d.a36cb8"
+            ]
+        ]
+    },
+    {
+        "id": "24f4fe7d.1cd912",
+        "type": "ui_text",
+        "z": "ea4cc328.20b16",
+        "group": "b2c51c4c.a05ac",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Statut LED de Température :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 820,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "1c382952.3e0527",
+        "type": "function",
+        "z": "ea4cc328.20b16",
+        "name": "print_ledTemp_state",
+        "func": "msg.topic = \"La LED de Température :\";\n\nif (msg.payload.ledTemp == \"off\")\n    msg.payload = \" éteinte\";\nelse\n    msg.payload = \" allumée\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 440,
+        "wires": [
+            [
+                "24f4fe7d.1cd912"
+            ]
+        ]
+    },
+    {
+        "id": "8718555e.a2a48",
+        "type": "http response",
+        "z": "66fd874c.598cf",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 560,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "ccd84ad8.2571c8",
+        "type": "json",
+        "z": "66fd874c.598cf",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 550,
+        "y": 440,
+        "wires": [
+            [
+                "73ba6487.c27684",
+                "2db5b274.4a36be"
+            ]
+        ]
+    },
+    {
+        "id": "f718cf89.4b48e",
+        "type": "debug",
+        "z": "66fd874c.598cf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "ce02e088.6f8748",
+        "type": "ui_text",
+        "z": "66fd874c.598cf",
+        "group": "fc64141.34fafe8",
+        "order": 1,
+        "width": 7,
+        "height": 2,
+        "name": "Statut LED Luminosité",
+        "label": "<font size=\"4\"><i class=\"fa fa-lightbulb-o fa-2x nr-dashboard-warning\"></i></font><font size=\"6pt \">  LED Luminosité</font>",
+        "format": "<font size=\"6pt\">{{msg.payload}}</font>",
+        "layout": "col-center",
+        "x": 1200,
+        "y": 540,
+        "wires": [],
+        "icon": "font-awesome/fa-lightbulb-o",
+        "info": "<font color= {{msg.color}} > <i class=\"fas fa-door-open\"></i>{{msg.payload}} </font>"
+    },
+    {
+        "id": "dc633be2.9bd3c",
+        "type": "ui_gauge",
+        "z": "66fd874c.598cf",
+        "name": "Gauge : Température",
+        "group": "94c7cedd.c8bb3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "<i class=\"fa fa-thermometer-three-quarters\" aria-hidden=\"true\"></i> Température",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "-45",
+        "max": "45",
+        "colors": [
+            "#00a7b3",
+            "#ec9822",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1200,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "73ba6487.c27684",
+        "type": "function",
+        "z": "66fd874c.598cf",
+        "name": "Extract Value",
+        "func": "var msg0 = { payload: msg.payload.light };\nvar msg1 = { payload: msg.payload.temperature };\nvar msg2 = \"\";\nvar msg3 = \"\";\n\n\n// Icone rond rouge et rond vert pour le statut des LED\nvar iconeTrue = \" <font color=\\\"green\\\";><i class=\\\"fa fa-circle\\\" aria-hidden=\\\"true\\\"></i></font>\";\nvar iconeFalse = \" <font color=\\\"red\\\";><i class=\\\"fa fa-circle\\\" aria-hidden=\\\"true\\\"></i></font>\";\n\n// Vérifivation du statut des LED pour le bon icone\nif (JSON.stringify(msg.payload.ledLight) == \"\\\"Eteinte\\\"\")\n    msg2 = { payload: msg.payload.ledLight + iconeFalse};\nelse\n    msg2 = { payload: msg.payload.ledLight + iconeTrue};\n\n\nif (JSON.stringify(msg.payload.ledTemp) == \"\\\"Eteinte\\\"\")\n    msg3 = { payload: msg.payload.ledTemp + iconeFalse};\nelse\n    msg3 = { payload: msg.payload.ledTemp + iconeTrue};\n\n\nreturn [msg0, msg1, msg2, msg3];",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 770,
+        "y": 440,
+        "wires": [
+            [
+                "f14d0c46.b8033",
+                "59063c9d.4cf5b4"
+            ],
+            [
+                "dc633be2.9bd3c",
+                "283bf6c5.84f23a"
+            ],
+            [
+                "ce02e088.6f8748"
+            ],
+            [
+                "f030343b.675518"
+            ]
+        ]
+    },
+    {
+        "id": "dbd1dfb.47198a",
+        "type": "http in",
+        "z": "66fd874c.598cf",
+        "name": "",
+        "url": "/",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 500,
+        "wires": [
+            [
+                "ccd84ad8.2571c8",
+                "f718cf89.4b48e",
+                "8718555e.a2a48"
+            ]
+        ]
+    },
+    {
+        "id": "f14d0c46.b8033",
+        "type": "ui_gauge",
+        "z": "66fd874c.598cf",
+        "name": "Gauge : Luminosité",
+        "group": "18c2324.c1ce6ce",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "<i class=\"fa fa-sun-o\" aria-hidden=\"true\"></i> Luminosité",
+        "label": "Lumen",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "4095",
+        "colors": [
+            "#000000",
+            "#acac06",
+            "#dfe199"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1190,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "59063c9d.4cf5b4",
+        "type": "ui_chart",
+        "z": "66fd874c.598cf",
+        "name": "Graphique Luminosité",
+        "group": "18c2324.c1ce6ce",
+        "order": 2,
+        "width": 7,
+        "height": 5,
+        "label": "<i class=\"fa fa-sun-o\" aria-hidden=\"true\"></i> Luminosité",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "4100",
+        "removeOlder": 1,
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1200,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "283bf6c5.84f23a",
+        "type": "ui_chart",
+        "z": "66fd874c.598cf",
+        "name": "Graphique : Température",
+        "group": "94c7cedd.c8bb3",
+        "order": 2,
+        "width": 7,
+        "height": 5,
+        "label": "<i class=\"fa fa-thermometer-three-quarters\" aria-hidden=\"true\"></i> Température",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-45",
+        "ymax": "45",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1210,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f030343b.675518",
+        "type": "ui_text",
+        "z": "66fd874c.598cf",
+        "group": "fc64141.34fafe8",
+        "order": 2,
+        "width": 7,
+        "height": 2,
+        "name": "Statut LED Température",
+        "label": "<font size=\"4\"><i class=\"fa fa-lightbulb-o fa-2x nr-dashboard-warning\"></i></font><font size=\"6pt \">  LED Température</font>",
+        "format": "<font size=\"6pt\">{{msg.payload}}</font>",
+        "layout": "col-center",
+        "x": 1210,
+        "y": 580,
+        "wires": [],
+        "icon": "font-awesome/fa-lightbulb-o",
+        "info": "<font color= {{msg.color}} > <i class=\"fas fa-door-open\"></i>{{msg.payload}} </font>"
+    },
+    {
+        "id": "ca09884b.943b88",
+        "type": "file",
+        "z": "66fd874c.598cf",
+        "name": "Sauvegarde en .csv",
+        "filename": "/Users/admin/Desktop/capteur.csv",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1040,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2db5b274.4a36be",
+        "type": "csv",
+        "z": "66fd874c.598cf",
+        "name": "",
+        "sep": ";",
+        "hdrin": "",
+        "hdrout": "all",
+        "multi": "one",
+        "ret": "\\r",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 760,
+        "y": 220,
+        "wires": [
+            [
+                "ca09884b.943b88"
+            ]
+        ]
+    },
+    {
+        "id": "b7c03dac.e11ee",
+        "type": "http in",
+        "z": "ca55284a.b8434",
+        "name": "",
+        "url": "/stats",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "370e0230.b41766",
+                "d5b5802a.dd1b1",
+                "19e60cbf.769e13"
+            ]
+        ]
+    },
+    {
+        "id": "370e0230.b41766",
+        "type": "json",
+        "z": "ca55284a.b8434",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 590,
+        "y": 400,
+        "wires": [
+            [
+                "11efb705.d397d9",
+                "aa72d011.f2971"
+            ]
+        ]
+    },
+    {
+        "id": "d5b5802a.dd1b1",
+        "type": "debug",
+        "z": "ca55284a.b8434",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "aa72d011.f2971",
+        "type": "function",
+        "z": "ca55284a.b8434",
+        "name": "light",
+        "func": "msg.topic = \"light\";\nmsg.payload = msg.payload.light;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 850,
+        "y": 500,
+        "wires": [
+            [
+                "7ad55097.9ec3",
+                "79a8607f.f132e"
+            ]
+        ]
+    },
+    {
+        "id": "11efb705.d397d9",
+        "type": "function",
+        "z": "ca55284a.b8434",
+        "name": "temperature",
+        "func": "msg.topic = \"temperature\";\nmsg.payload = msg.payload.temperature;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 830,
+        "y": 400,
+        "wires": [
+            [
+                "7ad55097.9ec3",
+                "9e4a7d0d.2a5ff"
+            ]
+        ]
+    },
+    {
+        "id": "7ad55097.9ec3",
+        "type": "ui_chart",
+        "z": "ca55284a.b8434",
+        "name": "",
+        "group": "17834f2e.932329",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Sensors",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1080,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19e60cbf.769e13",
+        "type": "http response",
+        "z": "ca55284a.b8434",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 620,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "9e4a7d0d.2a5ff",
+        "type": "ui_chart",
+        "z": "ca55284a.b8434",
+        "name": "",
+        "group": "17834f2e.932329",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1090,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "79a8607f.f132e",
+        "type": "ui_chart",
+        "z": "ca55284a.b8434",
+        "name": "",
+        "group": "17834f2e.932329",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Light",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#f9ed15",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1080,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2b750e83.f8d792",
+        "type": "debug",
+        "z": "40b93780.97f398",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "c1f4a029.d3c98",
+        "type": "function",
+        "z": "40b93780.97f398",
+        "name": "heat",
+        "func": "p = msg.payload;\nmsg.payload = p.temperature;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 590,
+        "y": 240,
+        "wires": [
+            [
+                "420aab0.b2eb454"
+            ]
+        ]
+    },
+    {
+        "id": "1c4e5591.4baf0a",
+        "type": "function",
+        "z": "40b93780.97f398",
+        "name": "Light",
+        "func": "p = msg.payload;\nmsg.payload = p.light;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "ea568ae2.8c0388"
+            ]
+        ]
+    },
+    {
+        "id": "3118d072.8ea79",
+        "type": "function",
+        "z": "40b93780.97f398",
+        "name": "red led",
+        "func": "p = msg.payload;\nmsg.payload = p.redLed;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 590,
+        "y": 320,
+        "wires": [
+            [
+                "3a5a5185.2ac0ee"
+            ]
+        ]
+    },
+    {
+        "id": "1058c67b.0c51aa",
+        "type": "function",
+        "z": "40b93780.97f398",
+        "name": "Green led",
+        "func": "p = msg.payload;\nmsg.payload = p.greenLed;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "674b3b84.391e34"
+            ]
+        ]
+    },
+    {
+        "id": "271d9cf1.9ea154",
+        "type": "http request",
+        "z": "40b93780.97f398",
+        "name": "post",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.43/POST",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 250,
+        "y": 360,
+        "wires": [
+            [
+                "7e6da7ed.ed6348"
+            ]
+        ]
+    },
+    {
+        "id": "15efcbf7.9a9594",
+        "type": "inject",
+        "z": "40b93780.97f398",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 360,
+        "wires": [
+            [
+                "271d9cf1.9ea154"
+            ]
+        ]
+    },
+    {
+        "id": "7e6da7ed.ed6348",
+        "type": "json",
+        "z": "40b93780.97f398",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "c1f4a029.d3c98",
+                "1c4e5591.4baf0a",
+                "3118d072.8ea79",
+                "1058c67b.0c51aa",
+                "2b750e83.f8d792",
+                "7b279cc1.f18d04"
+            ]
+        ]
+    },
+    {
+        "id": "ea568ae2.8c0388",
+        "type": "ui_chart",
+        "z": "40b93780.97f398",
+        "name": "",
+        "group": "e78ac9d.0ba4438",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "light chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 780,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a5a5185.2ac0ee",
+        "type": "ui_text_input",
+        "z": "40b93780.97f398",
+        "name": "",
+        "label": "Red led state",
+        "tooltip": "",
+        "group": "3cea36ea.c5c43a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "x": 790,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "674b3b84.391e34",
+        "type": "ui_text_input",
+        "z": "40b93780.97f398",
+        "name": "",
+        "label": "Green led state",
+        "tooltip": "",
+        "group": "3cea36ea.c5c43a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "x": 800,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "420aab0.b2eb454",
+        "type": "ui_chart",
+        "z": "40b93780.97f398",
+        "name": "",
+        "group": "1da73d7a.cd7823",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "heat chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 780,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b279cc1.f18d04",
+        "type": "function",
+        "z": "40b93780.97f398",
+        "name": "override",
+        "func": "p = msg.payload;\nmsg.payload = p.override;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 600,
+        "y": 400,
+        "wires": [
+            [
+                "2630e614.d86d0a"
+            ]
+        ]
+    },
+    {
+        "id": "2630e614.d86d0a",
+        "type": "ui_text_input",
+        "z": "40b93780.97f398",
+        "name": "",
+        "label": "override state",
+        "tooltip": "",
+        "group": "3cea36ea.c5c43a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "x": 800,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    }
+]
