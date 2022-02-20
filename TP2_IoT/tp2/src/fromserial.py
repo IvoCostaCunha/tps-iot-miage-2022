@@ -7,9 +7,11 @@ Author : G.MENEZ
 """
 import sys, serial
 import numpy as np
+import json
 from time import sleep
 from collections import deque
 from matplotlib import pyplot as plt
+import drawnow
 
 #=============================================
 
@@ -39,13 +41,13 @@ class AnalogPlot:
         self.fig = plt.figure()
         self.ax = self.fig.add_subplot(111)
         self.axline, = self.ax.plot(analogData.x, analogData.y,
-                                    'r.-', label="cu.usbserial-0001")
+                                    'r.-', label="light")
 
-        plt.xlabel('sample idx')
-        plt.ylabel('sample value (12 bits ?)')
+        plt.xlabel('# mesure')
+        plt.ylabel('lm value')
         #plt.xlim([0, 100])
         #plt.ylim([0, 4000])
-        self.decoration("Analog Signal")
+        self.decoration("Photo-sensor mesures")
         
     def updateplot(self, analogData):
         """  update plot """
@@ -62,8 +64,9 @@ class AnalogPlot:
         plt.title(title)
         plt.grid(True)
         plt.legend()
-        
+
 #----------------  Main function -----------------
+
 def main():
     # Ring buffer of last samples 
     analogData = AnalogData()
@@ -79,8 +82,15 @@ def main():
         bytesize=serial.EIGHTBITS,
         timeout=1
     )
-    
+
     counter=0
+    readingJson = False;
+
+    string_json = ""
+    temp = ""
+    light = ""
+    data = []
+
     while True:
         try:
             # Read 
@@ -91,19 +101,55 @@ def main():
             except UnicodeError: 
                 continue
             #v = v.decode("utf-8")
-            v = int(v)
-            print ("Valeur : {}".format(v))
+            # A partie de la problematique
+            #v = int(v)
+            #print ("Valeur : {}".format(v))
 
-            # Plot
-            analogData.add(counter, v)
-            analogPlot.updateplot(analogData)
-            print('plotting new data...')
+            if v == "{":
+                readingJson = True
                 
+            if readingJson:
+                string_json = string_json + v
+
+            if v == "}":
+                readingJson = False
+                #print(string_json)
+                json_data = json.loads(string_json)
+                
+                remove_chars = ['C','l','m']
+
+                temp_str = str(json_data["temperature"])
+                light_str = str(json_data["light"])
+
+                f=filter(lambda i: i not in remove_chars,temp_str) 
+                for i in f: 
+                    temp+=i 
+
+                f=filter(lambda i: i not in remove_chars,light_str) 
+                for i in f: 
+                    light+=i 
+
+                temp_f = float(temp)
+                light_i = int(light)
+                print(temp_f, light_i)
+
+                # reset string_json since one object is complete
+                string_json = ""
+                temp = "";
+                light = "";
+
+
+                print("\n")
+
+                # Plot
+                analogData.add(counter, light_i)
+                analogPlot.updateplot(analogData)
+                print('plotting new data...')
+                counter += 1
+                            
         except KeyboardInterrupt:
             print('exiting')
             break
-        
-        counter += 1
     
     # close serial
     ser.flush()
