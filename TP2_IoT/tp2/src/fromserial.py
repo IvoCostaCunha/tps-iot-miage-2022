@@ -36,15 +36,15 @@ class AnalogData:
 
 class AnalogPlot:
     """ Plotting Figure """
-    def __init__(self, analogData):
+    def __init__(self, analogData, l, xl, yl):
         plt.ion()                 # set plot to "animated"
         self.fig = plt.figure()
         self.ax = self.fig.add_subplot(111)
         self.axline, = self.ax.plot(analogData.x, analogData.y,
-                                    'r.-', label="light")
+                                    'r.-', label=l)
 
-        plt.xlabel('# mesure')
-        plt.ylabel('lm value')
+        plt.xlabel(xl)
+        plt.ylabel(yl)
         #plt.xlim([0, 100])
         #plt.ylim([0, 4000])
         self.decoration("Photo-sensor mesures")
@@ -59,6 +59,7 @@ class AnalogPlot:
         #        self.ax.autoscale()
         self.ax.relim()            # reset intern limits of the current axes
         self.ax.autoscale_view()   # reset axes limits 
+        #self.fig.canvas.show()
     
     def decoration(self, title):
         plt.title(title)
@@ -69,9 +70,11 @@ class AnalogPlot:
 
 def main():
     # Ring buffer of last samples 
-    analogData = AnalogData()
+    analogData_l = AnalogData()
+    analogData_t = AnalogData()
     # plotting canvas
-    analogPlot = AnalogPlot(analogData)    
+    analogPlot_l = AnalogPlot(analogData_l, "Light", "# mesure", "lm")    
+    analogPlot_t = AnalogPlot(analogData_t, "Temperature", "# mesures", "°C") 
     
     # open serial port
     ser = serial.Serial(
@@ -142,8 +145,10 @@ def main():
                 print("\n")
 
                 # Plot
-                analogData.add(counter, light_i)
-                analogPlot.updateplot(analogData)
+                analogData_l.add(counter, light_i)
+                analogPlot_l.updateplot(analogData_l)
+                analogData_t.add(counter, temp_f)
+                analogPlot_t.updateplot(analogData_t)
                 print('plotting new data...')
                 counter += 1
                             
