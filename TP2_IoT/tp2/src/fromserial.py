@@ -11,10 +11,8 @@ import json
 from time import sleep
 from collections import deque
 from matplotlib import pyplot as plt
-import drawnow
 
 #=============================================
-
 class AnalogData:
     
     def __init__(self, maxLen=100):
@@ -92,8 +90,7 @@ def main():
     string_json = ""
     temp = ""
     light = ""
-    data = []
-
+    
     while True:
         try:
             # Read 
@@ -103,10 +100,6 @@ def main():
                 v = v.decode("utf-8")
             except UnicodeError: 
                 continue
-            #v = v.decode("utf-8")
-            # A partie de la problematique
-            #v = int(v)
-            #print ("Valeur : {}".format(v))
 
             if v == "{":
                 readingJson = True
