@@ -3,6 +3,10 @@
 #include "OneWire.h" 
 #include "DallasTemperature.h"
 
+// D25 D26 for led
+// D23 for temperature sensor
+// D32 for luminosity sensor
+
 OneWire oneWire(23); // Allows to get data from multiple sensors from same bus
 DallasTemperature tempSensor(&oneWire); // Allows for mesurement of athe actual sensor
 
