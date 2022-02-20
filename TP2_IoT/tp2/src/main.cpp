@@ -37,5 +37,24 @@ void loop() {
     Serial.print(temp); 
     Serial.println(" C");
 
+
+    // Check if led are on or off (HIGH or LOW)
+
+    Serial.print("Red led :");
+    if(digitalRead(redLedPin == HIGH)) {
+        Serial.println("on");
+    }
+    else {
+        Serial.println("off");
+    }
+
+    Serial.print("Green led : ");
+    if(digitalRead(greenLedPin == HIGH)) {
+        Serial.println("on\n");
+    }
+    else {
+        Serial.println("off\n");
+    }
+
     delay(1000);
 }
