@@ -90,7 +90,7 @@ def main():
     string_json = ""
     temp = ""
     light = ""
-    
+
     while True:
         try:
             # Read 
@@ -109,7 +109,7 @@ def main():
 
             if v == "}":
                 readingJson = False
-                #print(string_json)
+                print(string_json)
                 json_data = json.loads(string_json)
                 
                 remove_chars = ['C','l','m']

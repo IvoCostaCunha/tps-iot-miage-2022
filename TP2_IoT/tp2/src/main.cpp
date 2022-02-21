@@ -12,6 +12,8 @@
 #include <SPI.h>
 #include <WiFi.h> // https://www.arduino.cc/en/Reference/WiFi
 
+#include <ArduinoJson.h>
+
 #define SaveDisconnectTime 1000 // Time im ms for save disconnection, needed to avoid that WiFi works only every second boot: https://github.com/espressif/arduino-esp32/issues/2501
 
 char receivedChar;
@@ -120,7 +122,7 @@ void setup() {
     while(!Serial);//wait for a serial connection  
 
     // Python script dromserial.py can't translate into json
-    // for some reason if this if off ...
+    // for some reason if wifi fails this if off ... to fix
     connect_wifi();          // Connect wifi 
   
     if (WiFi.status() == WL_CONNECTED){
@@ -143,16 +145,37 @@ void setup() {
 void loop() {
 
     while(Serial.available() > 0) {
+
+        // JSON Parser apapted to arduino dev
+        // exemple : https://wandbox.org/permlink/iDBqO7Vqs7t8W1qH
+        // https://arduinojson.org
+
+        // 50 is the size in bits
+        StaticJsonDocument<50> doc;
+
         // Read from serial
-        receivedChar = Serial.read();
-        //receivedStr = Serial.readStringUntil('\n'); // A string
+        //receivedChar = Serial.read();
+        receivedStr = Serial.readStringUntil('\n'); // A string
         Serial.print("\nESP received : "); // say what you got:
         //Serial.println(receivedChar);
-        Serial.println(receivedChar) ;
+        Serial.println(receivedStr) ;
+        // Should be tested to check fo errors but i'm gonna ignore this there 
+        //DeserializationError error = deserializeJson(doc, receivedStr);
+        /*if (error) {
+            std::cerr << "deserializeJson() failed: " << error.c_str() << std::endl;
+            return 1;
+        }*/
 
-        // Action ?
-        if (receivedChar == 'G') turnGreenLedOn();
-        if (receivedChar == 'R') turnRedLedOn();
+        deserializeJson(doc, receivedStr);
+        String cmd = doc["cmd"];
+        
+        if(cmd == "start") {
+            turnGreenLedOn();
+        }
+        
+        else if(cmd == "stop") {
+            turnRedLedOn();
+        }
     }
 
 

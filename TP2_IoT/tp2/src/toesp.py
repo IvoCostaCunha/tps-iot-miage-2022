@@ -6,11 +6,18 @@ from collections import deque
 from matplotlib import pyplot as plt
 
 esp = serial.Serial(port='/dev/cu.usbserial-0001', baudrate=9600, timeout=.1)
+j = '{"cmd" : "undefined"}'
+json_j = json.loads(j)
 
-def write_read(x):
+def writetoESP(x):
     esp.write(bytes(x, 'utf-8'))
 
 while True:
-    print("G for green led / R for red led \n")
-    c = input() # Taking input from user
-    value = write_read(c)
+    print("start / stop")
+    i = input() # Taking input from user
+    if i == "start" :
+        json_j["cmd"] = "start"
+    elif i == "stop" :
+        json_j["cmd"] = "stop"
+
+    writetoESP(str(json_j))
