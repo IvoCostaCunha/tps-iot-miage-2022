@@ -1,5 +1,7 @@
-#define TRUE 1
+/*#define TRUE 1
 #define FALSE 0
+
+// https://www.dfrobot.com/blog-1103.html
 
 #include <Arduino.h>
 
@@ -9,7 +11,7 @@
 #include <string>
 
 /*** Basic Wifi connection: wificonnect.ino ***/
-#include <SPI.h>
+/*#include <SPI.h>
 #include <WiFi.h> // https://www.arduino.cc/en/Reference/WiFi
 
 #include <ArduinoJson.h>
@@ -20,7 +22,7 @@ char receivedChar;
 String receivedStr;
 
 /* Credentials */
-const char ssid[] = "SSID";
+/*const char ssid[] = "SSID";
 const char password[] = "PWD"; 
 
 // D25 D26 for led
@@ -36,7 +38,7 @@ String redLedStatus;
 String greenLedStatus;
 
 /*------------------------*/
-String translateEncryptionType(wifi_auth_mode_t encryptionType) {
+/*String translateEncryptionType(wifi_auth_mode_t encryptionType) {
    // cf https://www.arduino.cc/en/Reference/WiFiEncryptionType 
   switch (encryptionType) {
     case (WIFI_AUTH_OPEN):
@@ -54,7 +56,7 @@ String translateEncryptionType(wifi_auth_mode_t encryptionType) {
   }
 }
 /*------------------------*/
-void print_network_status_light(){ // array of chars
+/*void print_network_status_light(){ // array of chars
   char s[256];
   sprintf(s,"\tIP address : %s\n", WiFi.localIP().toString().c_str()); Serial.print(s);
   sprintf(s,"\tMAC address : %s\n", WiFi.macAddress().c_str()); Serial.print(s);
@@ -76,7 +78,7 @@ void print_network_status(){ // Utilisation de String !
   Serial.print(s);
 }
 /*------------------------*/
-void connect_wifi(){
+/*void connect_wifi(){
  #define WiFiMaxTry 10
  int i;
  String hostname = "Mon petit objet ESP32";
@@ -166,7 +168,7 @@ void loop() {
             return 1;
         }*/
 
-        deserializeJson(doc, receivedStr);
+        /*deserializeJson(doc, receivedStr);
         String cmd = doc["cmd"];
         
         if(cmd == "start") {
@@ -190,4 +192,4 @@ void loop() {
 
     Serial.println(json+"\n");
     delay(1000);
-}
+}*/
